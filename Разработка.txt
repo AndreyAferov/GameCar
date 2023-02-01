@@ -1,0 +1,143 @@
+﻿	    double x = 3.14;
+            double kv;
+            double kub;
+            
+            for (int i = 0; i < 5; i++)
+            {
+               
+                Console.Write(x + "\t" );
+                x += 0.01;
+            }
+            Console.WriteLine("");
+            for (int i = 0; i < 5; i++)
+            {
+                kv = x * x;
+                kub = x * x * x;
+                
+                Console.Write("{0:0.##}",kv );
+                Console.Write("\t");
+                x += 0.01;
+            }
+            Console.WriteLine("");
+            for (int i = 0; i < 5; i++)
+            {
+                kv = x * x;
+                kub = x * x * x;
+
+                Console.Write("{0:0.##}", kub);
+                Console.Write("\t");
+                x += 0.01;
+            }
+
+
+
+
+
+
+
+
+
+
+{
+            int a;
+            for (a = 1; a < 3000; a++)
+            {
+                if ((a % 11 == 0) & (a % 7 == 0) & (a % 4 == 0)) 
+                {
+                    Console.Write(a+" ");
+                }
+
+            }
+
+    
+        bool prime;
+            Console.WriteLine();
+            int msg=0;
+        for (int i = 1; i < 3000; i++)
+        {
+            prime = true;
+            double sqrti = Math.Sqrt((double)i);
+            for (int j = 2; j < sqrti + 1; j++)
+                if (i % j == 0)
+                {
+                    prime = false;
+                    break;
+                }
+                if (prime)
+                {
+                    msg++;
+                    Console.Write(i + " ");
+                }
+                
+        }
+            Console.WriteLine();
+            Console.Write("Количество простых чисел: "+msg);
+            Console.WriteLine();
+        }
+
+
+
+
+
+
+
+
+
+////////////////////
+ long num = 9037600125, reverse = 0;
+            while (num != 0)
+
+            {
+                reverse = reverse * 10;
+
+                reverse = reverse + num % 10;
+
+                num = num / 10;
+
+            }
+            Console.WriteLine("Reverse введенных чисел : " + reverse);
+            long x = 9037600125;
+            long digitcount = (long)Math.Log10(x) + 1;
+            Console.WriteLine(digitcount);
+            long s = 0;
+            while (x > 0)  
+            {
+                s = s + x % 10;
+                x = x / 10;
+            }
+           Console.WriteLine(s);
+
+
+
+
+
+
+{
+            int a;
+            for (a = 1; a < 3000; a++)
+            {
+                if ((a % 11 == 0) & (a % 7 == 0) & (a % 4 == 0)) 
+                {
+                    Console.Write(a+" ");
+                }
+
+            }
+
+    
+        bool prime;
+            Console.WriteLine();
+        for (int i = 0; i < 3000; i++)
+        {
+            prime = true;
+            double sqrti = Math.Sqrt((double)i);
+            for (int j = 2; j < sqrti + 1; j++)
+                if (i % j == 0)
+                {
+                    prime = false;
+                    break;
+                }
+                if (prime)
+                {
+                    Console.Write(i + " ");
+                }
+        }
